@@ -79,6 +79,9 @@ main {
     section {
         padding: 2em 4em 2em 4em;
 
+        @include for-size(phone-only) {
+            padding: 2em 1.2em 2em 1.2em;
+        }
 
         &#bg {
             width: 100%;
@@ -114,12 +117,19 @@ main {
                 @include for-size(phone-only) {
                     float: none; 
                     margin: 1.3em auto 1.3em auto;
+                    img {
+                        max-width: 100%;
+                    }
                 }
             }
 
             iframe {
                 width: 420px;
                 height: 263px;
+
+                @include for-size(phone-only) {
+                    max-width: 100%;
+                }
             }
         }
 

@@ -25,6 +25,12 @@ a:hover {
   color: #666;
 }
 
+@media (max-width: 660px) {
+  p {
+    text-align: justify;
+  }
+}
+
 header img {
   height: 80px;
   margin: 10px;
@@ -43,6 +49,12 @@ nav a {
   font-size: 1.5em;
   margin-right: 1em;
   line-height: 100px;
+}
+
+@media (max-width: 660px) {
+  nav {
+    display: none;
+  }
 }
 
 main section:nth-child(odd) {
@@ -80,6 +92,13 @@ main section#dev p {
 main section#dev figure {
   float: right;
   margin-left: 2.5em;
+}
+
+@media (max-width: 760px) {
+  main section#dev figure {
+    float: none;
+    margin: 1.3em auto 1.3em auto;
+  }
 }
 
 main section#dev iframe {

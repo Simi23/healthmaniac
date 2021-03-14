@@ -2,8 +2,10 @@
 
 @mixin for-size($size) {
     @if $size == phone-only {
-        @media (max-width: 599px) { @content; }
-    }  @else if $size == desktop-up {
+        @media (max-width: 760px) { @content; }
+    }  @else if $size == tablet-max {
+        @media (max-width: 660px) { @content; }
+    } @else if $size == desktop-up {
         @media (min-width: 1200px) { @content; }
     }
 }
@@ -38,6 +40,12 @@ a {
     }
 }
 
+p {
+    @include for-size(tablet-max) {
+        text-align: justify;
+    }
+}
+
 header {
     img {
         height: 80px;
@@ -56,6 +64,10 @@ nav {
         font-size: 1.5em;
         margin-right: 1em;
         line-height: 100px;
+    }
+
+    @include for-size(tablet-max) {
+        display: none;
     }
 }
 
@@ -98,6 +110,11 @@ main {
             figure {
                 float: right;
                 margin-left: 2.5em;
+
+                @include for-size(phone-only) {
+                    float: none; 
+                    margin: 1.3em auto 1.3em auto;
+                }
             }
 
             iframe {

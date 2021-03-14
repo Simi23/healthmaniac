@@ -73,10 +73,13 @@ main section#idea p {
 
 main section#dev p {
   font-size: 1.4em;
+  margin-bottom: 1.2em;
+  padding-right: 1em;
 }
 
 main section#dev figure {
   float: right;
+  margin-left: 2.5em;
 }
 
 main section#download {

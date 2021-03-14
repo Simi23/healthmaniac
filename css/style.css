@@ -82,6 +82,11 @@ main section#dev figure {
   margin-left: 2.5em;
 }
 
+main section#dev iframe {
+  width: 420px;
+  height: 263px;
+}
+
 main section#download {
   font-size: 1.4em;
 }

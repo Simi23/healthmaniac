@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=K2D:wght@300;400;500&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'K2D', sans-serif;
+}
+
+.clear::after {
+  clear: both;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  -webkit-transition: color .5s;
+  transition: color .5s;
+}
+
+a:hover {
+  color: #666;
+}
+
+header img {
+  height: 80px;
+  margin: 10px;
+  vertical-align: middle;
+}
+
+nav {
+  display: inline;
+  float: right;
+}
+
+nav a {
+  font-weight: bold;
+  -webkit-transition: color .5s;
+  transition: color .5s;
+  font-size: 1.5em;
+  margin-right: 1em;
+  line-height: 100px;
+}
+
+main section:nth-child(odd) {
+  background-color: #eee;
+}
+
+main section {
+  padding: 2em 4em 2em 4em;
+}
+
+main section#bg {
+  width: 100%;
+  height: 350px;
+  top: 100px;
+  margin: 0;
+  padding: 0;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), color-stop(2.28%, rgba(255, 255, 255, 0))), url("../img/bg.jpg");
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, rgba(255, 255, 255, 0) 2.28%), url("../img/bg.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+main section#idea p {
+  font-size: 1.4em;
+}
+
+main section#dev p {
+  font-size: 1.4em;
+}
+
+main section#dev figure {
+  float: right;
+}
+
+main section#download {
+  font-size: 1.4em;
+}
+
+main section#download h3 {
+  margin-top: 1.3em;
+}
+/*# sourceMappingURL=style.css.map */
